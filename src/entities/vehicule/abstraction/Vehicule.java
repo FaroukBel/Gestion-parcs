@@ -6,6 +6,7 @@ public class Vehicule {
 
     String marque;
     LocalDate dateAchat;
+
     Double prixCourant, prixAchat;
 
     public Vehicule() {
@@ -15,6 +16,7 @@ public class Vehicule {
         this.dateAchat = dateAchat;
         this.prixCourant = prixCourant;
         this.prixAchat = prixAchat;
+
     }
 
     public Double getPrixAchat() {
@@ -32,6 +34,7 @@ public class Vehicule {
     public String getMarque() {
         return marque;
     }
+
 
     public void setDateAchat(LocalDate dateAchat) {
         this.dateAchat = dateAchat;

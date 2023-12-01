@@ -10,13 +10,14 @@ import java.util.Objects;
 public class Voiture extends Vehicule implements VehiculeCourse {
 
     Double cylindree;
+    String immatriculation;
     Long kilometrage;
     Double puissance;
     Long nbPortes;
 
     public Voiture() {
     }
-    public Voiture (Double prixAchat, LocalDate dateAchat, String marque, Double cylindree, Long kilometrage, Double puissance, Long nbPortes) {
+    public Voiture (Double prixAchat, LocalDate dateAchat, String marque, Double cylindree, Long kilometrage, Double puissance, Long nbPortes, String immatriculation) {
         super.setDateAchat(dateAchat);
         super.setMarque(marque);
         super.setPrixAchat(prixAchat);
@@ -24,7 +25,16 @@ public class Voiture extends Vehicule implements VehiculeCourse {
         this.kilometrage = kilometrage;
         this.puissance = puissance;
         this.nbPortes = nbPortes;
+        this.immatriculation = immatriculation;
     }
+    public String getImmatriculation() {
+        return immatriculation;
+    }
+
+    public void setImmatriculation(String immatriculation) {
+        this.immatriculation = immatriculation;
+    }
+
 
     @Override
     public Double calculerPrixCourant() {
